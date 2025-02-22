@@ -1,0 +1,63 @@
+1.) Find the distance between objects 1 and 3 by using the formula provided on the slides. Notice that we have mixed type of attributes.
+
+	Nominal:
+	  A = 3
+	  B = 2
+	  C = 1
+	  Range = 3 - 1 = 2
+
+	Ordinal:
+	  Excellent = 3
+	  Good = 2
+	  Fair = 1
+	  Range = 3 - 1 = 2
+
+	Numeric:
+	  Min = 22
+	  Max = 64
+	  Range = 64 - 22 = 42
+
+
+	Distance between 1 and 3:
+	  Nominal = 3 - 1 = 2
+	  Scaled = 2 / 2 = 1
+
+	  Ordinal = 1 - 2 = -1
+	  Scaled = -1 / 2 = -0.5
+
+	  Numeric = 45 - 64 = -19
+	  Scaled = -19 / 42 = -0.4524
+
+	  Total distance = 1 - 0.5 - 0.4524 = 0.0476
+
+
+3.) In the table below, determine whether passing a class has a dependency on attendance by using Chi-square test.
+	
+	Observed Frequencies:
+	  Attended and Passed: 25
+	  Attended and Failed: 6
+	  Skipped and Passed: 8
+	  Skipped and Failed: 15
+
+	Expected Frequencies:
+	  Attended and Passed: (31 * 33) / 54 = 18.94
+	  Attended and Failed: (31 * 21) / 54 = 12.06
+	  Skipped and Passed: (23 * 33) / 54 = 14.06
+	  Skipped and Failed: (23 * 21) / 54 = 8.94
+	
+	Chi-square:
+	  (25 - 18.94)^2 / 18.94 = 1.94
+	  (6 - 12.06)^2 / 12.06 = 3.05
+	  (8 - 14.06)^2 / 14.06 = 2.61
+	  (15 - 8.94)^2 / 8.94 = 4.09
+	
+	Total Chi-square:
+	  1.94 + 3.05 + 2.61 + 4.09 = 11.69
+		
+	Degrees of Freedom:
+	  (2 - 1) * (2 - 1) = 1
+	
+	Critical Value (α = 0.05):
+	  3.841
+
+	Since 11.69 > 3.841, there is a significant dependency between passing a class and attendance.

@@ -1,0 +1,5 @@
+data(mtcars)
+correlation <- cor(mtcars$mpg, mtcars$wt)
+print(correlation)
+plot(mtcars$wt, mtcars$mpg, col = "blue")
+abline(lm(mtcars$mpg ~ mtcars$wt), col = "red")
